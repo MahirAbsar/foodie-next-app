@@ -19,7 +19,6 @@ export default function ImagePicker({ label, name }) {
     const fileReader = new FileReader();
     fileReader.readAsDataURL(file);
     fileReader.onload = () => {
-      console.log(fileReader.result);
       setPickedImage(fileReader.result);
     };
   }
